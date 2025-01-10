@@ -5,6 +5,10 @@ from datetime import datetime
 from airflow.decorators import dag, task
 from airflow.models import Variable
 
+"""
+Variavel criada no airflow com o nome: bitcoin_api_url
+e endereço de url: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true
+"""
 
 @dag(
     dag_id="tf-bitcoin-var",
